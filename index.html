@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ziya Pithadiya | Aspiring Gynecologist</title>
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- GLOBAL STYLES -->
+  <style>
+    :root {
+      --primary: #7b2cbf;
+      --secondary: #f4effa;
+      --accent: #ffcad4;
+      --dark: #1f1f1f;
+      --light: #6b6b6b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: var(--dark);
+      line-height: 1.7;
+    }
+
+    /* ================= NAVBAR ================= */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.95);
+      border-bottom: 1px solid #eee;
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-family: 'Playfair Display', serif;
+      color: var(--primary);
+      font-size: 1.4rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: var(--primary);
+    }
+
+    /* ================= GENERAL SECTIONS ================= */
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 6rem 1.5rem;
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    /* ================= HOME ================= */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h2 span {
+      color: var(--primary);
+    }
+
+    .hero-text p {
+      margin-top: 1.2rem;
+      color: var(--light);
+      max-width: 500px;
+    }
+
+    .vision-card {
+      flex: 1;
+      background: linear-gradient(135deg, var(--secondary), #ffffff);
+      padding: 2.5rem;
+      border-radius: 24px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    /* ================= ABOUT ================= */
+    .about p {
+      max-width: 800px;
+      color: var(--light);
+    }
+
+    /* ================= INTERESTS ================= */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    /* ================= CONTACT ================= */
+    .contact-box {
+      background: linear-gradient(135deg, var(--primary), #5a189a);
+      color: white;
+      padding: 3rem;
+      border-radius: 24px;
+      text-align: center;
+    }
+
+    .contact-box a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background: white;
+      color: var(--primary);
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: var(--light);
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<header>
+  <nav>
+    <h1>Ziya Pithadiya</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ================= HOME ================= -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h2>Aspiring <span>Gynecologist</span><br>with Passion for Biology</h2>
+    <p>
+      I am a motivated medical aspirant with a strong interest in biology and women’s health. I aim to combine science, empathy, and creativity to serve society through healthcare.
+    </p>
+  </div>
+
+  <div class="vision-card">
+    <h3>Career Vision</h3>
+    <p>
+      My goal is to become a skilled and compassionate gynecologist, dedicated to women’s well-being, medical ethics, and lifelong learning.
+    </p>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <h2>About Me</h2>
+  <p>
+    My name is <strong>Ziya Pithadiya</strong>. I have a deep interest in biology and medical science, particularly in gynecology and women’s health. I view medicine as a balance of scientific knowledge and human understanding.
+  </p>
+</section>
+
+<!-- ================= INTERESTS ================= -->
+<section id="interests">
+  <h2>Core Interests</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Biology & Life Sciences</h3>
+      <p>Strong curiosity about human anatomy, physiology, and reproductive biology.</p>
+    </div>
+    <div class="card">
+      <h3>Gynecology</h3>
+      <p>Dedicated interest in women’s health, awareness, and patient-centered care.</p>
+    </div>
+    <div class="card">
+      <h3>Creative Thinking</h3>
+      <p>Enjoy creative learning methods and innovative problem-solving approaches.</p>
+    </div>
+    <div class="card">
+      <h3>UI / UX Awareness</h3>
+      <p>Interest in clean, user-friendly design for healthcare and education platforms.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="contact-box">
+    <h2>Contact Me</h2>
+    <p>Feel free to connect or discuss topics related to medicine and biology.</p>
+    <a href="mailto:ziyapithadiyagmail.com">ziyapithadiyagmail.com</a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  © 2026 Ziya Pithadiya · Designed with clarity & purpose
+</footer>
+
+</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School GitHub Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="#home" class="logo">GitHub Club</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#join">Join</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero container">
+        <div class="hero-content">
+          <p class="badge">Organized by students, for students</p>
+          <h1>Build, Share, and Collaborate with Our School GitHub Club</h1>
+          <p class="hero-text">
+            Learn coding, version control, open-source teamwork, and project
+            management in a friendly club environment.
+          </p>
+          <div class="hero-actions">
+            <a href="#join" class="btn btn-primary">Join the Club</a>
+            <a href="#activities" class="btn btn-secondary">See Activities</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <h2>This Month's Goal</h2>
+          <p>Launch a student-built website and publish it through GitHub Pages.</p>
+          <ul>
+            <li>✅ Intro to Git & GitHub</li>
+            <li>✅ Team repository setup</li>
+            <li>🔄 Pull request workshop</li>
+            <li>⏳ Project showcase day</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="about" class="section container">
+        <h2>About the Club</h2>
+        <p>
+          The GitHub Club helps students practice real-world software development
+          skills. Members work in teams, contribute to school projects, and build
+          portfolios that stand out for internships, scholarships, and higher
+          studies.
+        </p>
+      </section>
+
+      <section id="activities" class="section container">
+        <h2>What We Do</h2>
+        <div class="grid-cards">
+          <article class="card">
+            <h3>Beginner Workshops</h3>
+            <p>Hands-on sessions on Git, commits, branching, and pull requests.</p>
+          </article>
+          <article class="card">
+            <h3>Open Source Practice</h3>
+            <p>Contribute to beginner-friendly projects and improve coding habits.</p>
+          </article>
+          <article class="card">
+            <h3>Team Projects</h3>
+            <p>Build apps and websites for school events and student communities.</p>
+          </article>
+          <article class="card">
+            <h3>Mentor Hours</h3>
+            <p>Senior students help juniors with coding challenges and debugging.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="schedule" class="section container">
+        <h2>Weekly Schedule</h2>
+        <div class="schedule">
+          <p><strong>Monday:</strong> Learn & Practice (3:30 PM - 4:30 PM)</p>
+          <p><strong>Wednesday:</strong> Team Project Time (3:30 PM - 5:00 PM)</p>
+          <p><strong>Friday:</strong> Demos, Feedback & Planning (3:30 PM - 4:30 PM)</p>
+        </div>
+      </section>
+
+      <section id="join" class="section container">
+        <div class="join-box">
+          <h2>Join the GitHub Club</h2>
+          <p>
+            Open to all classes and skill levels. Bring your curiosity and we will
+            help you grow from beginner to confident contributor.
+          </p>
+          <a href="mailto:githubclub@school.edu" class="btn btn-primary"
+            >Email: githubclub@school.edu</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 School GitHub Club • Learn, Build, Share</p>
+    </footer>
+  </body>
+</html>
